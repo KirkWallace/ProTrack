@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+
+    <!--Action bar titles -->
+    <string name="app_name">HourTracker</string>
+    <string name="act_job">Jobs</string>
+    <string name="act_addJob">Add Job</string>
+    
+    <!--Button Names-->
+    <string name="button_add">Add Job</string>
+    <string name="button_clear">Clear</string>
+
+    <!--Pre-populations    *optional field -->
+    <string name="pre_jobName">Job Name</string>
+    <string name="pre_jobTitle">Position</string>
+    <string name="pre_location">*Location</string>
+    <string name="pre_employer">*Employer</string>
+    <string name="pre_description">*Description of type of work to be done...</string>
+    
+    
+    <!--Misc -->
+    <string name="text_jobName">Job:</string>
+    <string name="text_jobTitle">Position:</string>
+	<string name="text_location">Address:</string>
+    <string name="text_employer">Employer:</string>
+    <string name="text_description">Description:</string>
+    <string name="job1">Example Job Title</string>
+    <string name="opitonalExplanation">*optional field</string>
+    <string name="test_button">testingbuttonChange</string>
+
+  
+</resources>
