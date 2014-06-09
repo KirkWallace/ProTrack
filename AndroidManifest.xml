@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.sideproj.protrack.Jobs_main"
+            android:name="com.sideproj.protrack.MainMenu"
             android:label="@string/act_job"
             android:id="@+id/jobMainAct" >
             <intent-filter>
@@ -25,7 +25,7 @@
         <activity
             android:name="com.sideproj.protrack.Add_job"
             android:label="@string/act_addJob"
-            android:parentActivityName="com.sideproj.protrack.Jobs_main" >
+            android:parentActivityName="com.sideproj.protrack.MainMenu" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.sideproj.protrack.Jobs_main" />

@@ -16,6 +16,7 @@ public class JobEntry {
 	private String name; // Job name
 	private String pos; // position
 	private String emp; // employer
+	private String add; // address
 	private String des; // description of the job (overall)
 
 	private ArrayList<TimeEntry> workTimeList; // holds a list of time entries
@@ -219,6 +220,10 @@ public class JobEntry {
 	 */
 	public void setOverHours(double overHours) {
 		this.overHours = overHours;
+	}
+	public String toString()
+	{
+		return name;
 	}
 
 }

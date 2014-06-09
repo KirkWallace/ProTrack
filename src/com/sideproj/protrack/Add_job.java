@@ -6,9 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.view.View.OnClickListener;
 
 public class Add_job extends Activity {
 	static final int RESULT_CORRECT = 0;
@@ -25,34 +26,55 @@ public class Add_job extends Activity {
 				public void onClick(View v) {
 					addJob();
 				}
+				
+			});
+			Button clearFormB = (Button) findViewById(R.id.clearFormButton);
+			clearFormB.setOnClickListener(new OnClickListener() {
+				public void onClick(View v) {
+					clear();
+				}
+				
 			});
 		} catch (ActivityNotFoundException safe) {
 			Log.e("Add_job.onCreate", "Activity Not Found", safe);
 		}
+		/*
+		try {
+			Button clearFormB = (Button) findViewById(R.id.clearFormButton);
+			clearFormB.setOnClickListener(new OnClickListener() {
+				public void onClick(View v) {
+					clear();
+				}
+				
+			});
+
+		} catch (ActivityNotFoundException safe) {
+			Log.e("Add_job.onCreate", "Activity Not Found", safe);
+		}
+*/
 
 	}
 
-	/*
-	 * public void sendMessage(View view) {
-	 * 
-	 * }
-	 * 
-	 * public void clearForm(View view) {
-	 * 
-	 * }
-	 * 
-	 * private void onCreateView() {
-	 * 
-	 * }
-	 * 
-	 * 
-	 * protected void onPause() { }
-	 */
+
+
+	protected void clear() {
+		//remove all populated fields in the form and redraw
+		EditText editText = (EditText) findViewById(R.id.jobName);
+		editText.setText(null);
+		editText = (EditText) findViewById(R.id.jobTitle);
+		editText.setText(null);
+		editText = (EditText) findViewById(R.id.address);
+		editText.setText(null);
+		editText = (EditText) findViewById(R.id.employer);
+		editText.setText(null);
+		editText = (EditText) findViewById(R.id.description);
+		editText.setText(null);
+	}
+
+
 
 	public void addJob() {
-		System.out.println("we are there");
-
-		// Pull information from the form
+	 // Pull information from the form
 		// jobName
 		EditText editText = (EditText) findViewById(R.id.jobName);
 		String jobName = editText.getText().toString();

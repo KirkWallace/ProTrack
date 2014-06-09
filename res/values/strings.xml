@@ -3,7 +3,7 @@
     
 
     <!--Action bar titles -->
-    <string name="app_name">HourTracker</string>
+    <string name="app_name">ProTrack</string>
     <string name="act_job">Jobs</string>
     <string name="act_addJob">Add Job</string>
     
@@ -13,7 +13,7 @@
 
     <!--Pre-populations    *optional field -->
     <string name="pre_jobName">Job Name</string>
-    <string name="pre_jobTitle">Position</string>
+    <string name="pre_jobTitle"></string>
     <string name="pre_location">*Location</string>
     <string name="pre_employer">*Employer</string>
     <string name="pre_description">*Description of type of work to be done...</string>
